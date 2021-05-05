@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="tab">
+            <button type="button" class="tablinks" id="emp_btn" onClick="show('event','emp_tab')">EMPLOYEE</button>
+            <button type="button" class="tablinks" id="create_btn" onClick="show('event','create_tab')">CREATE</button>
+        </div>
+        </header>
+        <!---Employee Tab-->
+        <div id="emp_tab" class="tab_content">
+            <button type="button"></button>
+            <table class="table">
+         <thead><tr>
+                    <th>ID</th>
+                    <th>EMAIL</th><th></th><th></th>
+                    <th>FIRST_NAME</th><th></th>
+                    <th>LAST_NAME</th><th></th>
+                    <th>AVATAR</th>
+                </tr></thead>
+                <tbody id="data" onclick="" >
+                </tbody>
+            </table>
+        </div>
+        <!--Create Tab-->
+        <div id="create_tab" class="tab_content">
+            <div id="form_div">
+                <form id="real_form">
+                 <label for="fname">FIRST_NAME : </label>
+                 <input type="text" id="fname" name="fname"></input><br><br><br>
+                 <label for="lname">LAST_NAME : </label>
+                 <input type="text" id="lname" name="lname"><br><br><br>
+                 <label for="email">E-MAIL : </label>
+                 <input type="email" id="email" name="email" required><br><br><br>
+                 <label for="img">UPLOAD IMAGE : </label>
+                 <input type="file" id="img" name="img" accept="image/*"><br><br>
+                 <input type="submit" onClick="success()" value="Submit" id="submit">
+                </form><br>
+             </div>
+             <div id="status"></div>
+        </div>
+<script src="./script.js"></script>
+</body>
+</body>
+</html>
